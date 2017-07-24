@@ -1,0 +1,532 @@
+/** ----------- BODY -------------------------------------------- **/
+
+body {
+    background-color: #333;
+    transition: background-color 2s;
+    margin: 0;
+}
+
+
+/*  Hintergrund auf weiß setzen, wenn Detailansicht eingeblendet */
+.detailview_textauszug {
+    background-color: #fff;
+    transition: background-color 2s;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  
+ *  Media Querries, weil der weiße Hintergrund bei der Detailansicht des Textes Detailansicht
+ *  komplett bis zum Textende mit läuft, wenn "height" auf 100 % steht,
+ *  mit "auto" funktioniert es
+*/
+@media screen and (max-width: 700px) {
+    .detailview_textauszug {
+        height: auto;
+    }
+}
+
+/** ----------- BODY -------------------------------------------- **/
+
+
+
+
+
+
+/** ----------- ARTICLE -------------------------------------------- **/
+
+article {
+    position: absolute;
+    top: 60px;
+    margin-bottom: 0px;
+    z-index: 0;
+    padding-left:20px;
+}
+
+/** ----------- ARTICLE -------------------------------------------- **/
+
+
+
+
+
+/** ----------- HEADER -------------------------------------------- **/
+
+header {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background-color:#000;
+    height:auto;
+    margin:0px;
+    padding: 20px;
+    z-index: 10;
+    -moz-box-shadow:1px 1px 2px #000; /* Firefox */
+    -webkit-box-shadow:1px 1px 2px #000; /* Chrome, Safari */
+    -khtml-box-shadow:1px 1px 2px #000; /* Konqueror */
+    box-shadow:1px 1px 2px #000; /* CSS3 */
+}
+header a.zurueck {
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    padding-left: 30px;
+    background-image: url("../img/Pfeil_links_weiss01.png");
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 20px;
+}
+
+#switchContainer {
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    top: 20px;
+    margin:0px;
+    position: fixed;
+    right: 20px;
+    
+}
+#switchContainer a:link, a:visited, a:active, a:hover, a:focus {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#configSwitch {
+    float: right;
+    color: #fff;
+}
+#staticSwitch {
+    float: left;
+    color: #fff;
+}
+.trenner {
+    color: #fff;
+    margin: 0px 10px;
+}
+
+/** ----------- HEADER -------------------------------------------- **/
+
+
+
+
+
+/** ----------- HEADLINE -------------------------------------------- **/
+
+#headline {
+    height:60px;
+    margin-bottom:0px;
+    padding-top: 15px;
+}
+
+/*---*/
+
+#headline h1 {
+    position: fixed;
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #ccc;
+    transition: opacity 2s, color 2s, color 2s;
+    margin:5px;
+    paddingt: 0px 30px 0px 20px;
+}
+
+/** ----------- HEADLINE -------------------------------------------- **/
+
+
+
+
+
+/** ----------- GERUEST -------------------------------------------- **/
+
+.container {
+    display: flex;
+    overflow: auto;
+    padding: 10px;
+    margin: 0px;
+    white-space: nowrap;
+}
+.column {
+    width: auto;
+    display: inline-block;
+    margin:     0px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+/** ----------- GERUEST -------------------------------------------- **/
+
+
+
+
+
+/** ----------- FOOTER -------------------------------------------- **/
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height:60px;
+    background-color:#000;
+    margin:0px;
+    padding-left: 20px;
+    font-size: 16px;
+    -moz-box-shadow:1px -1px 2px #000; /* Firefox */
+    -webkit-box-shadow:1px -1px 2px #000; /* Chrome, Safari */
+    -khtml-box-shadow:1px -1px 2px #000; /* Konqueror */
+    box-shadow:1px -1px 2px #000; /* CSS3 */
+}
+
+/*---*/
+
+footer a:link, a:visited, a:active, a:hover, a:focus {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+/*---*/
+
+#foot {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+#foot ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#foot li{
+    display:inline;
+    font-family: "Avenir Medium", sans-serif;
+    font-size:20px;
+    text-transform: uppercase;
+    padding: 0px 30px 0px 0px;
+    margin:0px;
+}
+
+/** ----------- FOOTER -------------------------------------------- **/
+
+
+
+
+
+/** ------------ BILD_OBJEKT --------------------------------------------- **/
+
+#imgbox {
+    background-image: url("../img/BackgroundMerkliste.png");
+    padding: 15px;
+    /*padding-right:30px;*/
+    max-width:300px;
+    min-height: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    -moz-box-shadow:1px 1px 2px #000; /* Firefox */
+    -webkit-box-shadow:1px 1px 2px #000; /* Chrome, Safari */
+    -khtml-box-shadow:1px 1px 2px #000; /* Konqueror */
+    box-shadow:1px 1px 2px #000; /* CSS3 */
+}
+
+/*---*/
+
+#imgbox h1 {
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(128,128,128);
+    margin: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgb(128,128,128);
+}
+
+/*---*/
+
+#imgbox figure {
+    width: auto;
+    margin: 0px;
+}
+#imgbox figcaption {
+    display: none;
+}
+#imgbox .kringel {
+    float: right;
+    margin: 0px;
+}
+#imgbox .hauptbild {
+    margin:10px;
+    background-repeat: no-repeat;
+    width: 200px;
+}
+
+/** ------------ BILD_OBJEKT --------------------------------------------- **/
+
+
+
+
+
+/** ------------ TEXTAUSZUG --------------------------------------------- **/
+
+#textauszug {
+    background-image: url("../img/BackgroundMerkliste.png");
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    -moz-box-shadow:1px 1px 2px #000; /* Firefox */
+    -webkit-box-shadow:1px 1px 2px #000; /* Chrome, Safari */
+    -khtml-box-shadow:1px 1px 2px #000; /* Konqueror */
+    box-shadow:1px 1px 2px #000; /* CSS3 */
+}
+
+/*---*/
+
+#textauszug h1 {
+    display: block;
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(63,169,245);
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+/*---*/
+
+#textauszug h2 {
+    display: block;
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(128,128,128);
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+/*---*/
+
+#textauszug ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#textauszug li {
+    font-family: "Marion Regular", serif;
+    font-size: 20px;
+    font-style:italic;
+    color: #222;
+    margin-bottom:0px;
+}
+#textauszug li:last-child {
+    margin-bottom:30px;
+}
+
+/*---*/
+
+#textauszug p {
+    font-family: "Marion Regular", serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    margin: 0px;
+}
+
+/*---*/
+
+#textauszug a.detailansicht {
+    font-family: "Marion Regular", serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: rgb(63,169,245);
+    margin: 0px;
+    padding: 10px 0px 10px 40px;
+    background-image: url("../img/Pfeil02.png");
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:30px;
+}
+
+/*---*/
+
+.dialog {
+    display: block;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+.dialog:last-child {
+    margin-bottom: 0px;
+}
+
+/*---*/
+
+.pause {
+    font-style:italic;
+    display:block;
+    margin:10px 0px;
+}
+
+/*---*/
+
+#textauszug .wrapper {
+    height:280px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+/** ------------ TEXTAUSZUG --------------------------------------------- **/
+
+
+
+
+
+/** ------------ MEDIENVERWEISE --------------------------------------------- **/
+
+.medienverweise {
+    margin:0px 20px 20px 0px;
+    background-color: #000;
+    padding: 15px;
+    width: 300px;
+}
+
+/*---*/
+
+.medienverweise .medienverweiseHeadlineItem {
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(63,169,245);
+    margin: 0px;
+    padding-bottom: 10px;
+    background-image: url("../img/Pfeil01.png");
+    background-repeat: no-repeat;
+    background-position: 250px 0px;
+    background-size: 15%;
+}
+
+/*---*/
+
+.medienverweise ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.medienverweise li {
+    border-top: 1px dashed rgb(242,242,242);
+    font-family: "Avenir Medium", sans-serif;
+    font-size: 20px;
+    color: #ccc;
+    padding-top: 15px;
+    margin-bottom:12px;
+}
+.medienverweise li:last-child {
+    margin-bottom:0px;
+}
+
+/*---*/
+
+.medienverweise a:link, a:visited, a:active, a:hover, a:focus {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/** ------------ MEDIENVERWEISE --------------------------------------------- **/
+
+
+
+
+
+/** ------------ ANSICHTWECHSEL/DETAILANSICHT --------------------------------------------- **/
+
+
+/* Klassen "ausblenden, einblenden" blenden alle Bestandteile von "article" aus/ein" */
+
+.ausblenden {
+    transition: opacity 2s;
+    opacity: 0.0;
+}
+.einblenden {
+    transition: opacity 2s;
+    opacity: 1.0;
+}
+
+/*---*/
+
+.detailview_textauszug section {
+    display: none;
+}
+.detailview_textauszug .container .column {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---*/
+
+.detailview_textauszug #textauszug {
+    display: block;
+    padding: 0px;
+    background-image: none;
+    margin-bottom: 60px;
+    box-shadow:none;
+    width: 90%;
+    opacity: 1;
+    transition: opacity 2s, color 2s, color 2s;
+}
+.detailview_textauszug #textauszug .wrapper {
+    height:auto;
+    padding: 0px;
+    overflow:none;
+    margin:5px 0px 0px 0px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s, color 2s, color 2s;
+}
+
+/*---*/
+
+.detailview_textauszug #headline {
+    display: block;
+    opacity: 1;
+}
+.detailview_textauszug #headline  h1 {
+    position: static;
+    color: rgb(63,169,245);
+    padding-bottom: 10px;
+    padding-left: 0px;
+    border-bottom: 1px dashed rgb(63,169,245);
+    transition: opacity 2s, color 2s, color 2s;
+}
+
+/*---*/
+
+.detailview_textauszug #textauszug h1 {
+    display: none;
+}
+.detailview_textauszug #textauszug h2 {
+    display: none;
+}
+
+/*---*/
+
+.detailview_textauszug a.detailansicht {
+    display: none;
+}
+
+
+/** ------------ ANSICHTWECHSEL/DETAILANSICHT --------------------------------------------- **/
+
+

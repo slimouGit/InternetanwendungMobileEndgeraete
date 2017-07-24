@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aufgabe JSL</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Salim Oussayfi">
+    <meta name="description" content="ESA_1_IAM">
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- css-import -->
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <!-- js-import -->
+    <script src="js/interaktion.js" type="text/javascript"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-------------------------------------------------------------------------------------------->
+
+<body onload="initaliseView()">
+
+<!-------------------------------------------------------------------------------------------->
+
+<header>
+    <a id="zurueck_Pfeil" href="#" class="zurueck" title="zurueck">zurück</a>
+    <div id="switchContainer">
+		    <nav>
+		        <span id="staticSwitch"><a href="aufgabe_JSR.html">zur dynamischen Ansicht</a></span>
+		    </nav>
+	</div>
+</header>
+
+<!-------------------------------------------------------------------------------------------->
+
+<article>   
+    
+    <!-------------------------------------------------------------------------------------------->
+
+    <section id="headline">
+        <h1>Die Umsiedlerin</h1>
+    </section>
+
+    <!-------------------------------------------------------------------------------------------->
+
+    <div class="container">
+
+        <!-------------------------------------------------------------------------------------------->
+
+        <div class="column">
+            <!-- BILD_OBJEKT -->
+            <section id="imgbox">
+                <figure class="kringel">
+                    <img src="img/Kringel02.png" title="Kringel"/>
+                </figure>
+                <h1>Objekt</h1>
+                <figure>
+                    <img class="hauptbild" src="img/schlumpf.png"/>
+                </figure>
+            </section>
+        </div><!-- ENDE column -->
+
+        <!-------------------------------------------------------------------------------------------->
+
+        <div class="column">
+            <!-- TEXTAUSZUG -->
+            <section id="textauszug">
+                <h1>Textauszug</h1>
+                <div class="wrapper">
+                    <h2>&bdquo;Die Umsiedlerin oder das Leben auf dem Lande&bdquo;</h2>
+                    <ul>
+                        <li>14</li>
+                        <li>Kate</li>
+                        <li>Niet, Fondrak</li>
+                    </ul>
+
+                    <p>
+                        <span class="dialog">FONDRAK Ich geh zum Amerikaner. Gehst Du mit?</span>
+                        <span class="dialog">NIET Ich bleib wo ich was krieg.</span>
+                        <span class="dialog">FONDRAK Scheiß drauf. Das düngt.</span>
+
+                        <span class="pause">Pause</span>
+
+                        <span class="dialog">FONDRAK Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                Aenean commodo ligula eget dolor. Aenean massa.</span>
+                        <span class="dialog">NIET Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</span>
+                        <span class="dialog">FONDRAK Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                                Nulla consequat massa quis enim.</span>
+
+                        <span class="pause">Pause</span>
+
+                        <span class="dialog">FONDRAK Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                                arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                                                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</span>
+                        <span class="dialog">NIET Cras dapibus. Vivamus elementum semper nisi.
+                                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                                                consequat vitae, eleifend ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus viverra nulla ut metus varius laoreet.</span>
+                    </p>
+                </div>
+                <div>
+                    <a href="#" class="detailansicht" id="wechselAnsicht" title="gesamten Text anzeigen">weiter lesen ...</a>
+                </div>
+            </section>
+        </div><!-- ENDE column -->
+
+        <!-------------------------------------------------------------------------------------------->
+
+        <div class="column">
+            <!-- MEDIENVERWEISE -->
+            <section class="medienverweise">
+                <div class="medienverweiseHeadlineItem">Kommentar</div>
+                <ul>
+                    <li><a href="#">Hochschule für Ökonomie</a></li>
+                </ul>
+            </section>
+
+            <section class="medienverweise">
+                <div class="medienverweiseHeadlineItem">Filme</div>
+                <ul>
+                    <li><a href="#">Dark Star, 1974</a></li>
+                    <li><a href="#">Pappa ante Portas, 1991</a></li>
+                </ul>
+            </section>
+            
+            <section class="medienverweise">
+                <div class="medienverweiseHeadlineItem">Vortrag</div>
+                <ul>
+                    <li><a href="#">Einer flog übers Kuckucksnest</a></li>
+                </ul>
+            </section>
+        </div><!-- ENDE column -->
+
+        <!-------------------------------------------------------------------------------------------->
+
+    </div><!-- ENDE flex-container -->
+
+    <!-------------------------------------------------------------------------------------------->
+
+</article>
+
+<!-------------------------------------------------------------------------------------------->
+
+<footer>
+    <nav>
+        <ul id="foot">
+            <li><a href="#">Archiv</a></li>
+            <li><a href="#">Werk</a></li>
+            <li><a href="#">Zeit</a></li>
+            <li><a href="#">Ort</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<!-------------------------------------------------------------------------------------------->
+
+</body>
+</html>

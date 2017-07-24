@@ -1,0 +1,17 @@
+{
+  "topicid": "die_umsiedlerin",
+  "title": "Die Umsiedlerin",
+  "contentItems": [
+    {
+      "renderContainer": "left",
+      "type": "textauszug",
+      "src": "content/texte/die_umsiedlerin.html"
+    },
+    {
+      "renderContainer": "middle",
+      "type": "imgbox",
+      "src": "./img/schlumpf.png",
+      "description": "Kommentar zum Schlumpf"
+    }
+  ]
+}

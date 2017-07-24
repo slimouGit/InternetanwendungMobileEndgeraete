@@ -1,0 +1,53 @@
+{
+  "topicid": "die_umsiedlerin",
+  "title": "Die Umsiedlerin",
+  "contentItems": [
+	{
+	  "renderContainer": "left",
+	  "type": "imgbox",
+	  "src": "./img/schlumpf.png",
+	  "description": "Kommentar zum Schlumpf"
+	}, {
+	  "renderContainer": "middle",
+	  "type": "textauszug",
+	  "src": "content/texte/die_umsiedlerin.html"
+	}, {
+	  "renderContainer": "right",
+	  "type": "medienverweise",
+	  "title": "Kommentar",
+	  "content": [
+		{
+		  "mediatype": "text/html",
+		  "title": "Hochschule für Ökonomie",
+		  "src": "#"
+		}
+	  ]
+	}, {
+	  "renderContainer": "right",
+	  "type": "medienverweise",
+	  "title": "Filme",
+	  "content": [
+		{
+		  "mediatype": "video/ogg",
+		  "title": "Dark Star, 1974",
+		  "src": "#"
+		}, {
+		  "mediatype": "audio/ogg",
+		  "title": "Pappa ante Portas, 1991",
+		  "src": "#"
+		}
+	  ]
+	}, {
+	  "renderContainer": "right",
+	  "type": "medienverweise",
+	  "title": "Vortrag",
+	  "content": [
+		{
+		  "mediatype": "video/ogg",
+		  "title": "Einer flog \u00fcbers Kuckucksnest",
+		  "src": "#"
+		}
+	  ]
+	}
+  ]
+}
